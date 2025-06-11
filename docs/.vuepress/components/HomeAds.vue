@@ -9,25 +9,19 @@ const isZh = computed(() => {
 })
 
 const vidHubEn = {
-  title: "VidHub - An elegant cloud video player within the Apple ecosystem.",
-  hero: [
-    "Support for iPhone, iPad, Mac, and Apple TV.",
-    "Supports various cloud storage providers such as Aliyun, Baidu Cloud, OneDrive, Google Drive, Dropbox, Alist, mounted with different cloud drives like Quark Cloud, pikpak, 115, and more.",
-  ],
-  url: "https://apps.apple.com/app/apple-store/id1659622164?pt=118612019&ct=alist&mt=8",
-  tag: "Free",
-  new_site: "Open the new site",
+  title: "",
+  hero: [],
+  url: "",
+  tag: "",
+  new_site: "　This version is free from code poisoning, safe to use　",
 }
 
 const vidHubCN = {
-  title: "VidHub - 苹果生态下优雅的网盘视频播放器",
-  hero: [
-    "iPhone，iPad，Mac，Apple TV全平台支持,",
-    "直接挂载阿里云盘、百度网盘、OneDrive、GoogleDrive、Dropbox、Alist挂载各种夸克云盘，pikpak, 115等等。",
-  ],
-  url: "https://zh.okaapps.com/product/1659622164?ref=alist",
-  tag: "免费",
-  new_site: "打开新站点",
+  title: "",
+  hero: [],
+  url: "",
+  tag: "",
+  new_site: "　这是没有被投毒过的版本，请放心食用　",
 }
 
 const vidHub = computed(() => {
@@ -52,7 +46,7 @@ const isApple = computed(() => {
       ></div>
       <a v-else class="vidhub" :href="vidHub.url" target="_blank">
         <div>
-          <img src="/img/ss/vidhub-logo.png" alt="" />
+          <img src="" alt="" />
           <div>
             <div class="title">
               <span>{{ vidHub.title }}</span>
@@ -64,7 +58,7 @@ const isApple = computed(() => {
           </div>
         </div>
       </a>
-      <a class="new_site" href="https://alistgo.com" target="_blank">{{ vidHub.new_site }}</a>
+      <a class="new_site" href="" target="_blank">{{ vidHub.new_site }}</a>
     </div>
   </div>
 </template>
@@ -79,7 +73,7 @@ const isApple = computed(() => {
   border: 1px solid #aaaaaa50;
   border-radius: 10px;
   padding: 10px 0;
-  color: #007bff;
+  color: #70C6BE;
   text-decoration: none;
 }
 .vidhub {
